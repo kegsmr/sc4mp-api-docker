@@ -10,7 +10,7 @@ if [ ! -f "releases/v${VERSION}" ]; then
   wget -P releases https://github.com/kegsmr/sc4mp-api/archive/refs/tags/v$VERSION.zip
   unzip ./releases/v$VERSION.zip -d ./src
 
-  mv -f ./src/sc4mp-server-$VERSION/* .
+  mv -f ./src/sc4mp-api-$VERSION/* .
   rm -r ./src
 
 fi
