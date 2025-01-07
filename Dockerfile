@@ -15,6 +15,8 @@ RUN apk add wget unzip jq
 
 WORKDIR /server
 
+RUN pip install --no-cache-dir Flask
+
 EXPOSE $PORT
 
 CMD [ "/startup.sh" ]
